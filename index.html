@@ -15,12 +15,23 @@ https://justinjackson.ca/jolt
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
 <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700,700italic,100,100italic,300,300italic,500,400italic,500italic" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="js/typed.js" type="text/javascript"></script>
+<script>
+  $(function(){
+      $(".element").typed({
+        strings: ["a writer.", "a product person.", "a jack ass.", "a podcaster.", "a marketing dork.", "a professional burrito artist.", "a mega maker."],
+        typeSpeed: 30,
+        backDelay: 1000,
+      });
+  });
+</script>
 </head>
 
 <body>
   <section>
-    <header>
-      <h1 align="center">Justin Jackson, <a href="https://twitter.com/mijustin">@mijustin</a></h1>
+    <header class="bubble">
+      <h1 align="center">Justin Jackson is <span class="element"></span></h1>
     </header>
   </section>
 
